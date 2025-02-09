@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; background: black; }
+        .neon-btn { font-size: 20px; padding: 15px 30px; color: white; border: 2px solid cyan; background: transparent; text-transform: uppercase; position: relative; cursor: pointer; overflow: hidden; transition: 0.3s; }
+        .neon-btn:hover { box-shadow: 0 0 20px cyan; }
+        .neon-btn::before { content: ""; position: absolute; width: 100%; height: 100%; background: cyan; top: 0; left: -100%; transition: 0.3s; }
+        .neon-btn:hover::before { left: 0; opacity: 0.2; }
+    </style>
+</head>
+<body>
+    <button class="neon-btn">Hover Me</button>
+</body>
+</html>
